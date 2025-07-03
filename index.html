@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TextPad</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body id='body'>
+    <div id="main">
+        <h2>TextPad</h2>
+        <ul id="navbar">
+            <li><button id="changeTheme" onclick="changeTheme()">Light Mode ☀️</button></li>
+            <li><button id="navfindreplace" onclick="navFindReplace()">Find & Replace</button></li>
+            <li><button onclick="clearIt()">Clear</button></li>
+        </ul>
+        <div id="counters">
+            <p id="lettercount">Letters : 0</p>
+        <p id="wordcount">Words : 0</p>
+        </div>
+        
+        <div id="findReplace">
+            <input type="text" placeholder="Find" id="findText">
+            <br>
+            <input type="text" placeholder="Replace" id="replaceText">
+            <br>
+            <button id="replaceButton" onclick="replaceText()">Replace</button>
+        </div>
+        <br>
+        <div id="area">
+        <textarea placeholder="Type Something..." id="textarea" onchange="textChange()" oninput="textChange()" rows="30" cols="30"></textarea>
+        </div>
+    </div>
+</body>
+</html>

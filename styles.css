@@ -1,0 +1,74 @@
+body
+{
+    margin: 0px auto;
+    padding: 0px auto;
+    background-color: black;
+    color:greenyellow;
+    text-align: center;
+}
+#navbar
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    background-color:gray;
+    justify-content: space-around;
+    padding-left: 0px;
+}
+#navbar button
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:gray;
+    border:none;
+    color:white;
+}
+#navbar button:hover
+{
+    color:greenyellow;
+}
+p
+{
+    font-size:1em;
+    align-items: center;
+}
+#area
+{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#textarea
+{
+    width:90%;
+    height: 80%;
+    font-size:1.1em;
+    background-color: black;
+    border: 2px solid greenyellow;
+    color:white;
+    padding-top:10px;
+    font-family: monospace;
+    border-radius:5px;
+    &:active
+    {
+        background-color: gray;
+    }
+}
+#findReplace input
+{
+    width:40%;
+    display: block;
+    margin-left:30%;
+}
+#findReplace button
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:gray;
+    border:none;
+    color:white;
+}
+#findReplace
+{
+    display: none;
+}
